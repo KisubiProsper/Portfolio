@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .project {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="color: blue;">Hello! I'm Zabron K Pro, a passionate developer and an Educator who uses technology (STEM advocate)<br> 
+            and education to empower young people in Uganda.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>I Worked on a functioning calculator project which boosted my passionate for coding.</p>
+            <h4>project 2</h4>
+            <p>I also worked on a student Longin system which is friendly to the end user</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your email">
+            <textarea placeholder="message"></textarea>
+            <button type="button" onclick="sendMessage()">Send</button>
+        </form>
+    </section>
+
+    <script>
+        function sendMessage() {
+            alert("Thank you for your message!");
+        }
+    </script>
+</body>
+</html>
